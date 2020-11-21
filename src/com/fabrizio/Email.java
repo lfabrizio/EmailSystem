@@ -15,6 +15,8 @@ public class Email {
         this.firstName = firstName;
         this.lastName=lastName;
         System.out.println("Email created for " + this.lastName + " " + this.firstName);
+        this.department = setDepartment();
+        System.out.println("Department is " + this.department);
     }
 
 //    todo: ask for the department
