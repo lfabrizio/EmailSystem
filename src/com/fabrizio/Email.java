@@ -8,10 +8,11 @@ public class Email {
     private int mailboxCapacity;
     private String alternateEmail;
 
-//    todo: constructor to receive first and last name
+
     public Email(String firstName, String lastName){
         this.firstName = firstName;
         this.lastName=lastName;
+        System.out.println("Email created for " + this.lastName + " " + this.firstName);
     }
 
 //    todo: ask for the department
