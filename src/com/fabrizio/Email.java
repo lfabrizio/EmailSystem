@@ -1,5 +1,7 @@
 package com.fabrizio;
 
+import java.util.Scanner;
+
 public class Email {
     private String firstName;
     private String lastName;
@@ -16,6 +18,20 @@ public class Email {
     }
 
 //    todo: ask for the department
+    private String setDepartment() {
+        System.out.print("Enter the Department\n 1 for Sales\n 2 for Development\n3 for Accounting\n 0 for None");
+        Scanner in = new Scanner(System.in);
+        int deptChoice = in.nextInt();
+        if (deptChoice == 1) {
+            return "Sales";
+        } else if (deptChoice == 2) {
+            return "Development";
+        } else if (deptChoice == 3) {
+            return "Accounting";
+        } else {
+            return "";
+        }
+    }
 
 //            todo: generate a random password
 
