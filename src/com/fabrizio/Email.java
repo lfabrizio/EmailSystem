@@ -36,6 +36,15 @@ public class Email {
     }
 
 //            todo: generate a random password
+    private String randomPassword(int length){
+        String passwordSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!";
+        char[] password = new char[length];
+        for(int i = 0; i < length;i++){
+           int rand = (int)Math.random() * passwordSet.length();
+           password[i] = passwordSet.charAt(rand);
+        }
+        return new String(password);
+    }
 
 //        todo: set the mailbox capacity and alternate email and change the password
 }
